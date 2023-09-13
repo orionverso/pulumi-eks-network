@@ -1,0 +1,3 @@
+name: k8s-network
+runtime: go
+description: Define a vpc network for k8s clusters
