@@ -214,8 +214,8 @@ func NewK8sVpc(ctx *pulumi.Context, name string, args *K8sVpcArgs, opts ...pulum
 	ctx.Export("VpcId", componentResource.Vpc.ID())
 	ctx.Export("PrivateSubnetIds", componentResource.PrivateSubnetIds)
 	ctx.Export("PublicSubnetIds", componentResource.PublicSubnetIds)
-	ctx.Export("PrivateRoutetableIds", componentResource.PrivateRoutetableIds)
-	ctx.Export("PublicRoutetableIds", componentResource.PublicRoutetableIds)
+	ctx.Export("PrivateRouteTableIds", componentResource.PrivateRoutetableIds)
+	ctx.Export("PublicRouteTableIds", componentResource.PublicRoutetableIds)
 	ctx.Export("Subnets", componentResource.Subnets)
 
 	// ctx.RegisterResourceOutputs(componentResource, pulumi.Map{})
