@@ -11,3 +11,15 @@ This is a network suggestion for running aws eks kubernetes. It is low cost sinc
 ![Alt text](/diagram/network.png "quickDiagram")
 
 
+
+
+## Deployment
+
+```bash
+curl -fsSL https://get.pulumi.com | sh 
+
+export AWS_ACCESS_KEY_ID=<YOUR_ACCESS_KEY_ID> && \
+export AWS_SECRET_ACCESS_KEY=<YOUR_SECRET_ACCESS_KEY> && \ 
+export AWS_REGION=<YOUR_AWS_REGION>
+
+pulumi up 
